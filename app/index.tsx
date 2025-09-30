@@ -8,10 +8,7 @@ const Home = () => {
         <View style={styles.container}>
 
                 <Text>
-                    Sophias testapp
-                </Text>
-                <Text style={{ marginTop: 12, marginBottom: 30 }}>
-                    Får vi se vad detta blir
+                    Hobby Projects Blog
                 </Text>
 
         </View>
