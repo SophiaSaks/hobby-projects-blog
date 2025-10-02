@@ -11,11 +11,11 @@ export const Colors = {
         uiBackground:"#692331ff",
     },
     light: {
-        text: "#8e6464ff",
+        text: "#3D5647",
         title: "#854343ff",
         navBackground:"#FDF0E6",
         iconColor: "#2b4616ff",
         iconColorFocused:"#4F9D14",
-        uiBackground:"#ece2daff",
+        uiBackground:"#E6DEAB",
     }
 }

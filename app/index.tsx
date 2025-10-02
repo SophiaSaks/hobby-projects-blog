@@ -5,10 +5,11 @@ const Logo = require('../assets/images/logowcagfriendly.png')
 const BackgroundLight = require('../assets/images/backgroundLight.png')
 
 
-const Home = () => {
+const Index = () => {
 
     const colorScheme = useColorScheme()
     const theme = colorScheme ? Colors[colorScheme] : Colors.light
+
 
     return (
         <View style={styles.container}>
@@ -32,7 +33,7 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Index
 
 const styles = StyleSheet.create({
     container: {

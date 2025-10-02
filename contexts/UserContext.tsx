@@ -17,10 +17,12 @@ interface UserProviderProps {
 
 export function UserProvider({ children }: UserProviderProps) {
     const [user, setUser] = useState<User | null>(null)
+    const [loading, setLoading] = useState<boolean>(true)
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, (firebaseUser) => {
             setUser(firebaseUser)
+            setLoading(false)
         })
         return unSubscribe
     }, [])
@@ -66,7 +68,7 @@ export function UserProvider({ children }: UserProviderProps) {
 
     return (
         <UserContext.Provider value={{ user, login, register, logout }}>
-            {children}
+            {loading ? null : children}
         </UserContext.Provider>
     )
 }
