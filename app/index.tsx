@@ -1,17 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
-
-
+import ThemedView from '@/components/ThemedView'
+import { Image, StyleSheet, Text } from 'react-native'
+import Logo from '../assets/images/hobbywcagfriendly.png'
 
 
 const Home = () => {
     return (
-        <View style={styles.container}>
+        <ThemedView style={styles.container} >
+            <Image 
+            source={Logo} 
+            style={styles.img}/>
 
                 <Text>
                     Hobby Projects Blog
                 </Text>
 
-        </View>
+        </ThemedView>
     )
 }
 
@@ -24,11 +27,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     img: {
-        marginVertical: 12,
-        width: 200,
-        height: 210
-    },
-    link: {
-        borderBottomWidth: 1
+        marginVertical: 24,
+        width: 220,
+        height: 220
     }
 })
